@@ -937,7 +937,7 @@
   list-style: none;
   line-height: 22px !important;
   margin: 10px 0;
-  background: url(/images/circle.png)
+  background: url(../../../../../../../images/circle.png);
     no-repeat left top 2px;
   padding-left: 26px;
 }
