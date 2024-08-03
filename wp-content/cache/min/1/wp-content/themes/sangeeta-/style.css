@@ -1432,8 +1432,8 @@ div.wpcf7 .ajax-loader {
 }
 
 .getaquotebt a {
-  width: 199px;
-  height: 122px;
+  width: 90px;
+  height: 100px;
   padding: 0;
   display: block;
   z-index: 9999;
@@ -1448,25 +1448,25 @@ div.wpcf7 .ajax-loader {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   cursor: pointer !important;
-  box-shadow: 0 3px 16px #5674e3;
+  /* box-shadow: 0 3px 16px #5674e3; */
   border-radius: 9px 0 0 9px;
 }
 
 .getaquotebt {
   position: fixed;
-  right: 0;
+  left: 0;
   bottom: 0;
   z-index: 9999999;
 }
 
 .getaquotebt a img {
-  height: 122px;
+  height: 100px;
   margin: 0;
   width: auto;
 }
 
 .getaquotebt a:hover {
-  width: 201px;
+  width: 90px;
   box-shadow: none;
   -webkit-appearance: none;
   transition: all ease 0.3s;
