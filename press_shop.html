@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link data-minify="1" rel="stylesheet"
         href="https://sangeetaindustries.com/wp-content/cache/min/1/font-awesome/4.7.0/css/font-awesome.min.css?ver=1693050157"> -->
-    <link data-minify="1" rel="stylesheet"
-        href="./wp-content/cache/min/1/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link data-minify="1" rel="stylesheet" href="./wp-content/cache/min/1/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <title>Press Shop - 24steelimpressions</title>
     <link rel="preload" data-rocket-preload as="style"
@@ -18,6 +17,14 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Nunito%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CFira%20Sans%20Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen%20Sans%3A300%2Cregular%2C500%2C600%2C700%2C800%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic&#038;subset=latin%2Clatin-ext&#038;display=swap" />
     </noscript>
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./images/Mangala-Favicon.png" type="image/x-icon">
+
     <!-- <script type="application/ld+json" class="yoast-schema-graph">
         {
             "@context": "https://schema.org",
@@ -671,8 +678,7 @@
     <!-- <link data-minify="1" rel='stylesheet' id='contact-form-7-css'
         href='https:/./wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1693050157'
         type='text/css' media='all' /> -->
-    <link rel="stylesheet"
-        href="./wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css">
+    <link rel="stylesheet" href="./wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css">
 
     <style id='contact-form-7-inline-css' type='text/css'>
         .wpcf7 .wpcf7-recaptcha iframe {
@@ -1003,8 +1009,8 @@
         textarea {
             background-color: #fff;
             border: 1px solid #bbb;
-            padding: 2px;
-            color: #4e4e4e
+            /* padding: 2px; */
+            color: #4e4e4e;
         }
 
         input.text:focus,
@@ -6924,6 +6930,7 @@
                                 <li><a class="dropdown-item" href="./press_shop.html">Press Shop</a></li>
                                 <li><a class="dropdown-item" href="./Inspection_and_Control.html">Inspection and
                                         Control</a></li>
+                                <li><a class="dropdown-item" href="./Paint-shop.html">Paint Shop</a></li>
                             </ul>
                         </li>
 
@@ -6935,6 +6942,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="./appliances.html">Appliances</a></li>
                                 <li><a class="dropdown-item" href="./Automobile.html">Automobile</a></li>
+                                <li><a class="dropdown-item" href="./Fire_rated_doors.html">Fire Rated Doors</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -6950,13 +6958,14 @@
                         <div class="nav-item w-100 ">
                             <!-- <a href="" class="btn text-white mb-0" rel="noopener"
                                 style="background-color: #2d1a72;"><span class="blink">Enquiry</span></a> -->
-                            <a href="#" class="pushable text-decoration-none">
+                            <button class="pushable text-decoration-none" type="submit" id="myBtn"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <span class="shadow"></span>
                                 <span class="edge"></span>
                                 <span class="front">
                                     Enquiry
                                 </span>
-                            </a>
+                            </button>
                         </div>
                     </div>
 
@@ -6969,7 +6978,93 @@
                 font-family: "Edu AU VIC WA NT Hand", cursive;
                 color: rgb(0, 0, 0);
             }
+
+            .enquiry-color {
+                background-color: #3b2c82a7;
+            }
         </style>
+
+        <!-- ----------------START Enquairy form----------------- -->
+
+        <div class="modal fade overflow-y-hidden" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content enquiry-color">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white fs-2 font-bold honey" id="exampleModalLabel">Enquiry Form</h5>
+                        <!-- <button type="button" class="close border-dark-subtle border-1 px-1" data-bs-dismiss="modal" aria-label="Close"> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                        <!-- </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <form action="#!">
+                            <div class="row gy-4 gy-xl-5 p-2">
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label text-white font-wieght">Full Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" value=""
+                                        placeholder="Enter Name" required>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4">
+                                    <label for="email" class="form-label text-white font-wieght">Email <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text font-wieght">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" name="email" value=""
+                                            placeholder="Enter Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4">
+                                    <label for="phone" class="form-label text-white font-wieght">Phone Number<span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text font-wieght">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                            </svg>
+                                        </span>
+                                        <input type="tel" class="form-control" id="phone" name="phone" value=""
+                                            placeholder="Enter Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label for="subject" class="form-label text-white font-wieght">Subject <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="subject" name="subject" value=""
+                                        placeholder="Enter Subject" required>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label for="message" class="form-label text-white font-wieght">Message <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"
+                                        placeholder="Enter Message" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="d-grid">
+                                        <button
+                                            class="btn bg-success btn-success focus:outline-none hover:bg-indigo-600 btn-lg"
+                                            data-mdb-ripple-init type="button" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------END Enquairy form----------------- -->
+
 
         <!-- <div class="getaquotebt"><a target="_blank"
                 href="https://www.sangeetaindustries.com/wp-content/uploads/2023/08/Sangeeta_Industries_Profile_2023.pdf"
@@ -7029,8 +7124,7 @@
                                                             data-lazy-src="./wp-content/uploads/2019/06/pres-5.jpg" /><noscript><img
                                                                 fetchpriority="high" decoding="async" width="800"
                                                                 height="800"
-                                                                src="./wp-content/uploads/2019/06/pres-5.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/pres-5.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/pres-5.jpg 800w, ./wp-content/uploads/2019/06/pres-5-150x150.jpg 150w, ./wp-content/uploads/2019/06/pres-5-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-541" /></noscript>
@@ -7051,8 +7145,7 @@
                                                             class="wp-image-542"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press.jpg 800w, ./wp-content/uploads/2019/06/press-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-542" /></noscript>
@@ -7073,8 +7166,7 @@
                                                             class="wp-image-543"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press-1.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press-1.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press-1.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press-1.jpg 800w, ./wp-content/uploads/2019/06/press-1-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-1-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-543" /></noscript>
@@ -7095,8 +7187,7 @@
                                                             class="wp-image-544"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press-2.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press-2.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press-2.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press-2.jpg 800w, ./wp-content/uploads/2019/06/press-2-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-2-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-544" /></noscript>
@@ -7119,8 +7210,7 @@
                                                             class="wp-image-545"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press-4.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press-4.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press-4.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press-4.jpg 800w, ./wp-content/uploads/2019/06/press-4-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-4-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-545" /></noscript>
@@ -7141,8 +7231,7 @@
                                                             class="wp-image-546"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press-5.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press-5.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press-5.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press-5.jpg 800w, ./wp-content/uploads/2019/06/press-5-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-5-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-546" /></noscript>
@@ -7163,8 +7252,7 @@
                                                             class="wp-image-547"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press9.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press9.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press9.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press9.jpg 800w, ./wp-content/uploads/2019/06/press9-150x150.jpg 150w, ./wp-content/uploads/2019/06/press9-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-547" /></noscript>
@@ -7185,8 +7273,7 @@
                                                             class="wp-image-548"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press10.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press10.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press10.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press10.jpg 800w, ./wp-content/uploads/2019/06/press10-150x150.jpg 150w, ./wp-content/uploads/2019/06/press10-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-548" /></noscript>
@@ -7209,8 +7296,7 @@
                                                             class="wp-image-549"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press11.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press11.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press11.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press11.jpg 800w, ./wp-content/uploads/2019/06/press11-150x150.jpg 150w, ./wp-content/uploads/2019/06/press11-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-549" /></noscript>
@@ -7231,8 +7317,7 @@
                                                             class="wp-image-551"
                                                             data-lazy-src="./wp-content/uploads/2019/06/press-12.jpg" /><noscript><img
                                                                 decoding="async" width="800" height="800"
-                                                                src="./wp-content/uploads/2019/06/press-12.jpg"
-                                                                alt=""
+                                                                src="./wp-content/uploads/2019/06/press-12.jpg" alt=""
                                                                 srcset="./wp-content/uploads/2019/06/press-12.jpg 800w, ./wp-content/uploads/2019/06/press-12-150x150.jpg 150w, ./wp-content/uploads/2019/06/press-12-300x300.jpg 300w"
                                                                 sizes="(max-width: 800px) 100vw, 800px"
                                                                 class="wp-image-551" /></noscript>
@@ -7258,8 +7343,7 @@
                                                         class="wp-image-313"
                                                         data-lazy-src="./wp-content/uploads/2019/06/footer-map.jpg" /><noscript><img
                                                             decoding="async" width="635" height="365"
-                                                            src="./wp-content/uploads/2019/06/footer-map.jpg"
-                                                            alt=""
+                                                            src="./wp-content/uploads/2019/06/footer-map.jpg" alt=""
                                                             srcset="./wp-content/uploads/2019/06/footer-map.jpg 635w, ./wp-content/uploads/2019/06/footer-map-300x172.jpg 300w"
                                                             sizes="(max-width: 635px) 100vw, 635px"
                                                             class="wp-image-313" /></noscript></span> </div>
@@ -7369,6 +7453,47 @@
                 </div>
             </div>
         </footer>
+
+        <!-- -------START Sticky Top----------- -->
+
+
+        <a href="" class="back-to-top_2 row align-items-center justify-content-center" id="backToTop"><i
+                class="fa-solid fa-arrow-up"></i></a>
+
+        <script>
+            // Get the button
+            var backToTopButton = document.getElementById("backToTop");
+
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 200 ||
+                    document.documentElement.scrollTop > 200
+                ) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            backToTopButton.onclick = function () {
+                scrollToTop();
+            };
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth", // for smooth scrolling
+                });
+            }
+        </script>
+        <!-- -------END Sticky Top----------- -->
+
+
     </div>
     </div>
     <script type="text/javascript"
